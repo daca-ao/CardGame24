@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008000"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/guides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guides"
+        android:textSize="120px"
+        android:textColor="#ff0000"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="18dp" />
+    
+    <TextView 
+        android:id="@+id/guide1"
+        android:layout_below="@id/guides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=
+        "1. Only multiplication, division, addition or subtraction can be used here. " 
+        android:textSize="50px"
+        android:textColor="#ffffff"
+        android:layout_margin="18dp" />
+    
+    <TextView 
+        android:id="@+id/guide2"
+        android:layout_below="@id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=
+        "2. In this game Ace, Jack, Queen, King respectively represents 1, 11, 12, 13. " 
+        android:textSize="50px" 
+        android:textColor="#ffffff" 
+        android:layout_margin="18dp" />
+    
+    <TextView 
+        android:id="@+id/guide3"
+        android:layout_below="@id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. The number of times of selecting open and close brackets is restricted to 3. " 
+        android:textSize="50px"
+        android:textColor="#ffffff" 
+        android:layout_margin="18dp" />
+    
+    <TextView 
+        android:id="@+id/enjoyGame"
+        android:layout_below="@id/guide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="Enjoy your game!" 
+        android:textSize="65px"
+        android:textColor="#ffff00"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp" />
+    
+    <ImageButton 
+        android:id="@+id/back_start" 
+        android:background="@drawable/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enjoyGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout>

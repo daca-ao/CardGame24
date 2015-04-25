@@ -1,0 +1,162 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#008000" 
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+	
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical" >
+        	<TextView 
+	            android:layout_weight="1"
+	        	android:id="@+id/formula"
+	        	android:layout_width="fill_parent"
+	       	 	android:layout_height="85dp"
+	       	 	android:layout_marginLeft="5dp"
+	       	 	android:layout_marginTop="5dp"
+	        	android:background="#c0c0c0"
+	        	android:textColor="#000000"
+	        	android:textStyle="bold"
+	        	android:textSize="43dp"
+	        	android:gravity="right" />
+        	<TextView 
+	            android:layout_weight="1"
+	        	android:id="@+id/result"
+	        	android:layout_width="fill_parent"
+	       	 	android:layout_height="85dp"
+	       	 	android:layout_marginLeft="5dp"
+	        	android:background="#c0c0c0"
+	        	android:textColor="#000000"
+	        	android:textStyle="bold"
+	        	android:textSize="43dp"
+	        	android:gravity="right"  />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_weight="4.64"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical" >
+            <ImageButton 
+           		android:id="@+id/clr"
+           		android:layout_width="60dp"
+           		android:layout_height="60dp"
+           		android:scaleType="centerCrop"
+           		android:src="@drawable/cancel" />
+            <ImageButton 
+           		android:id="@+id/bsc"
+           		android:layout_width="60dp"
+           		android:layout_height="60dp"
+           		android:scaleType="centerCrop"
+           		android:src="@drawable/backspace_idle" />
+            <ImageButton 
+           		android:id="@+id/equal"
+           		android:layout_width="60dp"
+           		android:layout_height="60dp"
+           		android:scaleType="centerCrop"
+           		android:src="@drawable/equal_idle" />
+        </LinearLayout>
+    </LinearLayout>
+    	 
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <ImageButton 
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:id="@+id/card1"
+            android:layout_height="180dp"
+            android:scaleType="fitCenter" />
+        <ImageButton 
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:id="@+id/card2"
+            android:layout_height="180dp"
+            android:scaleType="fitCenter" />
+        <LinearLayout 
+            android:layout_weight="1.3"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical" >
+            <ImageButton 
+                android:layout_gravity="center_horizontal"
+                android:layout_height="60dp"
+                android:id="@+id/plus"
+                android:layout_width="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/plus_idle"/>
+            <ImageButton 
+                android:layout_gravity="center_horizontal"
+                android:layout_height="60dp"
+                android:id="@+id/minus"
+                android:layout_width="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/minus_idle" />
+            <ImageButton 
+                android:layout_gravity="center_horizontal"
+                android:layout_height="60dp"
+                android:id="@+id/multiply"
+                android:layout_width="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/multiply_idle"  />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <ImageButton 
+            android:layout_weight="1" 
+            android:id="@+id/card3"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitCenter" />
+        <ImageButton 
+            android:layout_weight="1" 
+            android:id="@+id/card4"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitCenter" />
+        <LinearLayout 
+            android:layout_weight="1.3"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:orientation="vertical" >
+            <ImageButton 
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/divide"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/divide_idle"/>
+            <ImageButton 
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/leftBracket"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lbracket_idle" />
+            <ImageButton 
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/rightBracket"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rbracket_idle" />
+        </LinearLayout>
+    </LinearLayout> 
+</LinearLayout>
